@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+       background: linear-gradient(135deg,#153677, #4e085f); 
+}
+.container{
+    height: 500px;
+    width: 850px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+    margin: 50px auto ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.round-no{
+    color: white;
+    /* text-align: center; */
+    height: 40px;
+    width: 90px;
+    background: rgb(124, 118, 118);
+    margin: 10px;
+}
+.round-no p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    
+}
+.game-container{
+    height: 400px;
+    width: 800px;
+    background: rgb(138, 130, 130);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-side{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 350px;
+    background: #000;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+.screen-user{
+    width: 290px;
+    height: 200px;
+    background: white;
+}
+.buttons{
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+.score-user{
+    width: 290px;
+    height: 60px;
+    background: white;
+}
+.vs-message-side{
+    width: 140px;
+    height: 140px;
+    background: #000;
+    margin: 5px;
+    position: relative;
+}
+.computer-side{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 350px;
+    background: #000;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+.screen-comp{
+    width: 290px;
+    height: 200px;
+    background: white;
+    margin-bottom: 10px;
+}
+.score-comp{
+    width: 290px;
+    height: 60px;
+    background: white;
+}
+.who{
+    color: white;
+    position: absolute;
+    top: 0px;
+}
+
+.vs-message-side p{
+    color: white;
+    font-size: 50px;
+    /* position: absolute; */
+    margin: 35px ;
+    
+
+}
