@@ -16,30 +16,47 @@
             <div class="game-container">
                 <div class="user-side">
                     <div class="who">You</div>
-                    <di class="screen-user"></di>
-                    <di class="click-buttons">
+                    <div class="screen-user">
+                        <p>Pick Your Move</p>
+                        <div class="user-move-img">
+                            <!-- <img src="images/fist.png" alt="rock"> -->
+                        </div>
+                        
+                    </div>
+                    <div class="click-buttons">
                         <button class="buttons rock-button" onclick="compareMoveRock()">Rock</button>
                         <button class="buttons paper-button" onclick="compareMovePaper()">Paper</button>
                         <button class="buttons scissors-button" onclick="compareMoveScissors()">Scissors</button>
-                    </di>
-                    <di class="score-user">
+                    </div>
+                    <div class="score-user">
                         <p>Win: value</p>
                         <p>Loose: value</p>
                         <p>Draw: value</p>
-                    </di>
+                    </div>
                 </div>
                 <div class="vs-message-side">
-                    <p>VS</p>
+                    <p class="vs">VS</p>
+                    <!-- <p class="win">You Won!</p> -->
+                    <!-- <p class="loose">You Loose!</p> -->
+                    <!-- <p class="draw">Draw!</p> -->
                 </div>
                 <div class="computer-side">
                     <div class="who">Computer</div>
-                    <di class="screen-comp"></di>
+                    <div class="screen-comp">
+                       <p>
+                        Computer's Pick
+                       </p> 
+                       <div class="comp-move-img">
+                        <!-- <img src="images/fist.png" alt="rock"> -->
+                       </div>
+                      
+                    </div>
                     <div class="computers-choosing"></div>
-                    <di class="score-comp">
+                    <div class="score-comp">
                         <p>Win: value</p>
                         <p>Loose: value</p>
                         <p>Draw: value</p>
-                    </di>
+                    </div>
                 </div>
             </div>
 

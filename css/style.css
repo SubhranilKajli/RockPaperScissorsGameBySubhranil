@@ -58,25 +58,62 @@ body{
 }
 .screen-user{
     width: 290px;
-    height: 200px;
+    height: 180px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .buttons{
     width: 80px;
     height: 50px;
+    border-radius: 6px;
     cursor: pointer;
 }
 .score-user{
     width: 290px;
     height: 60px;
     background: white;
+    color: #000;
+    
 }
-.vs-message-side{
+
+.vs-message-side p.vs {
     width: 140px;
     height: 140px;
     background: #000;
     margin: 5px;
-    position: relative;
+    padding: 35px 10px 20px 6px;
+    text-align: center;
+    
+}
+
+.vs-message-side p.win{
+    width: 140px;
+    height: 140px;
+    font-size: 45px;
+    background: #000;
+    margin: 5px;
+    padding: 10px;
+    
+}
+.vs-message-side p.loose{
+    width: 140px;
+    height: 140px;
+    font-size: 45px;
+    background: #000;
+    margin: 5px;
+    padding: 10px;
+    
+}
+.vs-message-side p.draw{
+    width: 140px;
+    height: 140px;
+    background: #000;
+    margin: 5px;
+    padding: 35px 20px 10px 10px;
+   
 }
 .computer-side{
     display: flex;
@@ -91,6 +128,10 @@ body{
     position: relative;
 }
 .screen-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 290px;
     height: 200px;
     background: white;
@@ -111,7 +152,49 @@ body{
     color: white;
     font-size: 50px;
     /* position: absolute; */
-    margin: 35px ;
+    /* margin: 35px ; */
     
+
+}
+
+
+.screen-user p, .screen-comp p{
+    text-align: center;
+}
+
+.score-comp p , .score-user p{
+    margin-left: 10px;
+}
+
+.click-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.click-buttons button{
+    margin: 10px;
+
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.screen-comp div  , .screen-user div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 60px;
+    padding: 10px;
+   margin-bottom: 30px;
+   box-sizing: border-box;
+}
+.screen-comp img  , .screen-user img {
+    height: 80px;
+    width: 80px;
+    margin: 0;padding: 0;
 
 }
