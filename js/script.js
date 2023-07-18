@@ -1,3 +1,29 @@
+let buttons=document.querySelectorAll(".buttonss")
+Array.from(buttons).forEach((but)=>{
+    but.addEventListener("click",(e)=>{
+    let roundNum=document.querySelector(".roundNumm").innerHTML;
+    roundNum=Number.parseInt(roundNum);
+    roundNum++;
+    document.querySelector(".roundNumm").innerHTML=roundNum;
+    // if(document.querySelector(".roundNumm").innerHTML=="11"){
+    //     break;
+        
+    // } 
+
+
+
+
+    // roundNum++;
+    
+
+        
+
+    })
+})
+
+
+
+
 const youWin=()=>{
     
     let middle=document.querySelector(".vs-message-side")
@@ -115,25 +141,42 @@ const compareMoveRock =()=>{
     
     if(computerMove=="rock"){
     
-        // let scoreUser = document.querySelector(".score-user")
-        // let p=document.createElement("p");
-        // p.innerHTML=`Draw: ${draw}`;
-        // scoreUser.appendChild(p);
-        draw+=1 ;
+        let drawPoint=document.querySelector(".draw-point").innerHTML;
+        drawPoint=Number.parseInt(drawPoint);
+        drawPoint++;
+        document.querySelector(".draw-point").innerHTML=drawPoint;
 
-        comPdraw+=1;
+        let compDrawPoint=document.querySelector(".comp-draw-point").innerHTML;
+        compDrawPoint=Number.parseInt(compDrawPoint);
+        compDrawPoint++;
+        document.querySelector(".comp-draw-point").innerHTML=compDrawPoint;
+
         youDraw();
     
     }
     else if(computerMove=="paper"){
-        loose+=1;
-        comPwin+=1;
+             let loosePoint=document.querySelector(".loose-point").innerHTML;
+        loosePoint=Number.parseInt(loosePoint);
+        loosePoint++;
+        document.querySelector(".loose-point").innerHTML=loosePoint;
+
+        let compWinPoint=document.querySelector(".comp-win-point").innerHTML;
+        compWinPoint=Number.parseInt(compWinPoint);
+        compWinPoint++;
+        document.querySelector(".comp-win-point").innerHTML=compWinPoint;
         youLoose();
         
     }
     else{
-        win+=1;
-        comPloose+=1;
+              let winPoint=document.querySelector(".win-point").innerHTML;
+        winPoint=Number.parseInt(winPoint);
+        winPoint++;
+        document.querySelector(".win-point").innerHTML=winPoint;
+
+        let comploosePoint=document.querySelector(".comp-loose-point").innerHTML;
+        comploosePoint=Number.parseInt(comploosePoint);
+        comploosePoint++;
+        document.querySelector(".comp-loose-point").innerHTML=comploosePoint;
         youWin();
     }
 }
@@ -160,20 +203,42 @@ const compareMovePaper =()=>{
     let comPwin=0, comPdraw=0, comPloose=0;
     
     if(computerMove=="paper"){
-        draw+=1 ;
-        comPdraw+=1;
+
+        let drawPoint=document.querySelector(".draw-point").innerHTML;
+        drawPoint=Number.parseInt(drawPoint);
+        drawPoint++;
+        document.querySelector(".draw-point").innerHTML=drawPoint;
+
+        let compDrawPoint=document.querySelector(".comp-draw-point").innerHTML;
+        compDrawPoint=Number.parseInt(compDrawPoint);
+        compDrawPoint++;
+        document.querySelector(".comp-draw-point").innerHTML=compDrawPoint;
         youDraw();
     
     }
     else if(computerMove=="scissors"){
-        loose+=1;
-        comPwin+=1;
+             let loosePoint=document.querySelector(".loose-point").innerHTML;
+        loosePoint=Number.parseInt(loosePoint);
+        loosePoint++;
+        document.querySelector(".loose-point").innerHTML=loosePoint;
+
+        let compWinPoint=document.querySelector(".comp-win-point").innerHTML;
+        compWinPoint=Number.parseInt(compWinPoint);
+        compWinPoint++;
+        document.querySelector(".comp-win-point").innerHTML=compWinPoint;
         youLoose();
         
     }
     else{
-        win+=1;
-        comPloose+=1;
+        let winPoint=document.querySelector(".win-point").innerHTML;
+        winPoint=Number.parseInt(winPoint);
+        winPoint++;
+        document.querySelector(".win-point").innerHTML=winPoint;
+
+        let comploosePoint=document.querySelector(".comp-loose-point").innerHTML;
+        comploosePoint=Number.parseInt(comploosePoint);
+        comploosePoint++;
+        document.querySelector(".comp-loose-point").innerHTML=comploosePoint;
         youWin();
     }
 }
@@ -200,20 +265,45 @@ const compareMoveScissors =()=>{
     let comPwin=0, comPdraw=0, comPloose=0;
     
     if(computerMove=="scissors"){
-        draw+=1 ;
-        comPdraw+=1;
+        let drawPoint=document.querySelector(".draw-point").innerHTML;
+        drawPoint=Number.parseInt(drawPoint);
+        drawPoint++;
+        document.querySelector(".draw-point").innerHTML=drawPoint;
+
+        let compDrawPoint=document.querySelector(".comp-draw-point").innerHTML;
+        compDrawPoint=Number.parseInt(compDrawPoint);
+        compDrawPoint++;
+        document.querySelector(".comp-draw-point").innerHTML=compDrawPoint;
         youDraw();
     
     }
     else if(computerMove=="rock"){
-        loose+=1;
-        comPwin+=1;
+        let loosePoint=document.querySelector(".loose-point").innerHTML;
+        loosePoint=Number.parseInt(loosePoint);
+        loosePoint++;
+        document.querySelector(".loose-point").innerHTML=loosePoint;
+
+        let compWinPoint=document.querySelector(".comp-win-point").innerHTML;
+        compWinPoint=Number.parseInt(compWinPoint);
+        compWinPoint++;
+        document.querySelector(".comp-win-point").innerHTML=compWinPoint;
+        // loose+=1;
+        // comPwin+=1;
         youLoose();
         
     }
     else{
-        win+=1;
-        comPloose+=1;
+        let winPoint=document.querySelector(".win-point").innerHTML;
+        winPoint=Number.parseInt(winPoint);
+        winPoint++;
+        document.querySelector(".win-point").innerHTML=winPoint;
+
+        let comploosePoint=document.querySelector(".comp-loose-point").innerHTML;
+        comploosePoint=Number.parseInt(comploosePoint);
+        comploosePoint++;
+        document.querySelector(".comp-loose-point").innerHTML=comploosePoint;
+        // win+=1;
+        // comPloose+=1;
         youWin();
     }
 }

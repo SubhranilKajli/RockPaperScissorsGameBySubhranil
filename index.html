@@ -12,7 +12,7 @@
     <header></header>
     <main>
         <div class="container">
-            <div class="round-no"><p>Round no.</p></div>
+            <div class="round-no"><p>Round <span class="roundNumm">1</span></p></div>
             <div class="game-container">
                 <div class="user-side">
                     <div class="who">You</div>
@@ -24,14 +24,18 @@
                         
                     </div>
                     <div class="click-buttons">
-                        <button class="buttons rock-button" onclick="compareMoveRock()">Rock</button>
-                        <button class="buttons paper-button" onclick="compareMovePaper()">Paper</button>
-                        <button class="buttons scissors-button" onclick="compareMoveScissors()">Scissors</button>
+                        <button class="buttonss rock-button" onclick="compareMoveRock()">Rock</button>
+                        <button class="buttonss paper-button" onclick="compareMovePaper()">Paper</button>
+                        <button class="buttonss scissors-button" onclick="compareMoveScissors()">Scissors</button>
                     </div>
+                    <!-- <div class="click-button-next">
+                        <button class="buttonss rock-button" >Next Pick</button>
+                   
+                    </div> -->
                     <div class="score-user">
-                        <p>Win: value</p>
-                        <p>Loose: value</p>
-                        <p>Draw: value</p>
+                        <p>Win: <span class="win-point">0</span></p>
+                        <p>Loose: <span class="loose-point">0</span></p>
+                        <p>Draw: <span class="draw-point">0</span></p>
                     </div>
                 </div>
                 <div class="vs-message-side">
@@ -53,11 +57,14 @@
                     </div>
                     <div class="computers-choosing"></div>
                     <div class="score-comp">
-                        <p>Win: value</p>
-                        <p>Loose: value</p>
-                        <p>Draw: value</p>
+                        <p>Win: <span class="comp-win-point">0</span></p>
+                        <p>Loose: <span class="comp-loose-point">0</span></p>
+                        <p>Draw: <span class="comp-draw-point">0</span></p>
                     </div>
                 </div>
+            </div>
+            <div class="restart-button">
+                <button class="r-button" onclick="location.reload()">Restart</button>
             </div>
 
         </div>

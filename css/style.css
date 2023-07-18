@@ -65,7 +65,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.buttons{
+.buttonss{
     width: 80px;
     height: 50px;
     border-radius: 6px;
@@ -197,4 +197,10 @@ body{
     width: 80px;
     margin: 0;padding: 0;
 
+}
+
+.r-button{
+    height: 30px;
+    width: 60px;
+    margin: 10px;
 }
