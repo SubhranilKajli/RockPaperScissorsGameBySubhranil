@@ -1,15 +1,17 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-       background: linear-gradient(135deg,#153677, #4e085f); 
+       background: #FFFAD7; 
 }
 .container{
     height: 500px;
     width: 850px;
-    background: rgb(0, 0, 0);
+    background: #F86F03;
     border-radius: 10px;
     
     margin: 50px auto ;
@@ -20,11 +22,12 @@ body{
 }
 
 .round-no{
+    background: #FFA41B;
     color: white;
     /* text-align: center; */
     height: 40px;
     width: 90px;
-    background: rgb(124, 118, 118);
+    /* background: rgb(124, 118, 118); */
     margin: 10px;
 }
 .round-no p{
@@ -36,7 +39,7 @@ body{
 .game-container{
     height: 400px;
     width: 800px;
-    background: rgb(138, 130, 130);
+    background: #FFFAD7;
     border-radius: 7px;
     display: flex;
     flex-direction: row;
@@ -49,7 +52,7 @@ body{
     flex-direction: column;
     width: 310px;
     height: 350px;
-    background: #000;
+    background: #FFA41B;
     margin: 5px;
     justify-content: center;
     align-items: center;
@@ -64,12 +67,16 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+   
 }
 .buttonss{
     width: 80px;
     height: 50px;
     border-radius: 6px;
     cursor: pointer;
+    background: #FE0000;
+    color: white;
+    border: 0px;
 }
 .score-user{
     width: 290px;
@@ -82,18 +89,21 @@ body{
 .vs-message-side p.vs {
     width: 140px;
     height: 140px;
-    background: #000;
+    background:#FFA41B;
     margin: 5px;
     padding: 35px 10px 20px 6px;
     text-align: center;
     
+}
+.vs-message-side{
+    background: #F86F03;
 }
 
 .vs-message-side p.win{
     width: 140px;
     height: 140px;
     font-size: 45px;
-    background: #000;
+    background:#FFA41B;
     margin: 5px;
     padding: 10px;
     
@@ -102,7 +112,7 @@ body{
     width: 140px;
     height: 140px;
     font-size: 45px;
-    background: #000;
+    background:#FFA41B;
     margin: 5px;
     padding: 10px;
     
@@ -110,7 +120,7 @@ body{
 .vs-message-side p.draw{
     width: 140px;
     height: 140px;
-    background: #000;
+    background:#FFA41B;
     margin: 5px;
     padding: 35px 20px 10px 10px;
    
@@ -120,7 +130,7 @@ body{
     flex-direction: column;
     width: 310px;
     height: 350px;
-    background: #000;
+    background: #FFA41B;
     margin: 5px;
     justify-content: center;
     align-items: center;
@@ -203,4 +213,7 @@ body{
     height: 30px;
     width: 60px;
     margin: 10px;
+    background: #FFA41B;
+    color: white;
+    border: 0px;
 }
